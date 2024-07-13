@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anmol Rajput - Experienced Software Development Engineer</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Anmol Rajput - Software Development Engineer">
+    <meta name="description" content="Explore the portfolio of Anmol Rajput, a skilled and experienced Software Development Engineer with expertise in Python, Data Engineering, and full-stack web development. Discover his impressive projects, diverse technical skills, and proven track record in creating robust, scalable, and API-centric applications.">
+    <meta name="keywords" content="Anmol Rajput, software development engineer, python developer, java developer, full-stack developer, web development, backend development, frontend development, API design, software engineer portfolio, resume, projects, skills, experience, software engineering, programming, coding, technology, computer science">
+    <meta name="author" content="Anmol Rajput">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://anmolrajput.com">
+    <meta property="og:title" content="Anmol Rajput - Experienced Software Development Engineer">
+    <meta property="og:description" content="Explore the portfolio of Anmol Rajput, a skilled and experienced Software Development Engineer with expertise in Python, Data Engineering, and full-stack web development. Discover his impressive projects, diverse technical skills, and proven track record in creating robust, scalable, and API-centric applications.">
+    <meta property="og:image" content="profile_pic.png">
+    <meta property="og:image:alt" content="Anmol Rajput's Profile Image">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://anmolrajput.com">
+    <meta property="twitter:title" content="Anmol Rajput - Experienced Software Development Engineer">
+    <meta property="twitter:description" content="Explore the portfolio of Anmol Rajput, a skilled and experienced Software Development Engineer with expertise in Python, Data Engineering, and full-stack web development. Discover his impressive projects, diverse technical skills, and proven track record in creating robust, scalable, and API-centric applications.">
+    <meta property="twitter:image" content="profile_pic.png">
+    <meta property="twitter:image:alt" content="Anmol Rajput's Profile Image">
+    
+    <link rel="canonical" href="https://anmolrajput.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Global Styles */
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #6c63ff, #9370db);
+      }
+
+      /* Header Styles */
+      header {
+        background-color: transparent;
+        color: white;
+        padding: 50px 30px;
+        text-align: center;
+        animation: fadeIn 1s ease-in-out;
+        position: relative;
+        z-index: 2;
+      }
+
+      header h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 48px;
+        font-weight: 700;
+        margin: 0 0 20px;
+      }
+
+      header p {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0;
+      }
+
+      /* Navigation Styles */
+      nav {
+        background-color: rgba(255, 255, 255, 0.2);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        animation: slideIn 1s ease-in-out;
+        position: relative;
+        z-index: 3;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 20px 25px;
+        font-size: 18px;
+        font-weight: 500;
+        transition: background-color 0.3s ease-in-out;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav a:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+
+      /* Hamburger Menu */
+      .hamburger {
+        display: none;
+        cursor: pointer;
+        padding: 10px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 4;
+      }
+
+      .hamburger .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+        /* transition: all 0.3s ease-in-out; */
+      }
+
+      .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+      }
+
+      .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+
+      .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+
+      /* Main Content Styles */
+      main {
+        padding: 50px;
+        animation: fadeIn 1s ease-in-out;
+        position: relative;
+        z-index: 1;
+      }
+
+      section {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        margin-bottom: 50px;
+        animation: slideUp 0.5s ease-in-out;
+      }
+
+      section h2 {
+        color: #6c63ff;
+        font-family: "Playfair Display", serif;
+        font-size: 32px;
+        font-weight: 600;
+        margin-top: 0;
+      }
+
+      section h3 {
+        color: #6c63ff;
+        font-family: "Playfair Display", serif;
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      section p,
+      section ul li {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      section .project-description {
+        margin-bottom: 20px;
+      }
+
+      /* Profile Image Styles */
+      .profile-image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+
+      .profile-image img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      /* Achievements and Certifications Styles */
+      .achievements,
+      .certifications {
+        margin-top: 30px;
+      }
+
+      .achievements h3,
+      .certifications h3 {
+        color: #6c63ff;
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      .achievements ul,
+      .certifications ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .achievements ul li,
+      .certifications ul li {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+
+      .achievements ul li i,
+      .certifications ul li i {
+        margin-right: 10px;
+        color: #6c63ff;
+      }
+
+      .certifications i {
+        margin-right: 0px;
+      }
+
+      /* Skills Styles */
+      .skills ul li i {
+        margin-right: 10px;
+        color: #6c63ff;
+      }
+
+      .skills i {
+        color: #6c63ff;
+      }
+
+      /* Experience Styles */
+      .experience ul li i {
+        margin-right: 10px;
+        color: #6c63ff;
+      }
+
+      /* Contact Styles */
+      .contact {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        margin-top: 30px;
+      }
+
+      .contact p {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .contact a {
+        color: #6c63ff;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .contact a:hover {
+        color: #9370db;
+      }
+
+      /* Footer Styles */
+      footer {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        animation: fadeIn 1s ease-in-out;
+        position: relative;
+        z-index: 2;
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideIn {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slideUp {
+        0% {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 36px;
+        }
+
+        header p {
+          font-size: 22px;
+        }
+
+        .hamburger {
+          display: block;
+        }
+
+        nav {
+          flex-direction: column;
+          align-items: center;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          display: none;
+          background: linear-gradient(to right, #6c63ff, #9370db);
+          /* transform: translateY(-100%); */
+          /* transition: transform 0.3s ease-in-out; */
+          z-index: 3;
+        }
+
+        nav.active {
+          transform: translateY(0);
+        }
+
+        nav a {
+          font-size: 16px;
+          padding: 15px 20px;
+        }
+
+        main {
+          padding: 30px;
+          margin-top: -30px;
+        }
+
+        section {
+          padding: 30px;
+        }
+
+        section h2 {
+          font-size: 28px;
+        }
+
+        section h3 {
+          font-size: 20px;
+        }
+
+        section p,
+        section ul li {
+          font-size: 14px;
+        }
+
+        .profile-image img {
+          width: 150px;
+          height: 150px;
+        }
+
+        .achievements h3,
+        .certifications h3 {
+          font-size: 20px;
+        }
+
+        .achievements ul li,
+        .certifications ul li {
+          font-size: 14px;
+        }
+
+        .contact p {
+          font-size: 14px;
+        }
+      }
+    </style>
+
+    <script>
+      function toggleHamburger() {
+        const nav = document.querySelector("nav");
+        if (!nav.style.display || nav.style.display === "none") {
+          nav.style.display = "flex";
+        } else {
+          nav.style.display = "none";
+        }
+      }
+    </script>
+
+    <style>
+      i {
+        font-size: 25px;
+        /* margin-right: 10px; */
+        color: #6c63ff;
+        /* width: 30px; */
+        min-width: 40px;
+        /* margin-left: 5px; */
+        /* text-align: center; */
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      nav i {
+        color: white;
+      }
+
+      section:focus {
+        background-color: black;
+      }
+
+      li{
+        line-height: 3.1;
+      }
+
+      ul{
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li{
+        display: flex;
+      }
+
+      .project-description h3{
+        display: flex;
+        align-items: center;
+      }
+
+      a{
+        text-decoration: none;
+        color: inherit;
+      }
+
+      a:hover{
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      #experience-section h3 i{
+        margin-right: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="profile-image">
+        <img src="profile_pic.png" alt="Anmol Rajput" />
+      </div>
+      <h1>Anmol Rajput</h1>
+      <p>Software Development Engineer</p>
+    </header>
+
+    <nav>
+      <!-- <a href="#"><i class="fas fa-home"></i> Home</a> -->
+      <a href="#aboutme-section"><i class="fas fa-user"></i> About</a>
+      <a href="#skills-section"><i class="fas fa-code"></i> Skills</a>
+      <a href="#experience-section"><i class="fas fa-briefcase"></i> Experience</a>
+      <a href="#projects-section"><i class="fas fa-project-diagram"></i> Projects</a>
+      <a href="#achievements-section"><i class="fas fa-award"></i> Achievements</a>
+      <a href="#certifications-section"><i class="fas fa-certificate"></i> Certifications</a>
+      <a href="#contact-section"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+
+    <div class="hamburger" onclick="toggleHamburger()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <main>
+      <section id="aboutme-section">
+        <h2>About Me</h2>
+        <p>
+          As a highly adaptable Python Developer with 3 years of hands-on
+          experience in full stack development, I excel in interpreting client
+          needs and transforming them into comprehensive technical blueprints.
+          My expertise lies in crafting robust, scalable, and API-centric
+          infrastructures, leveraging the latest frameworks including Flask,
+          FastAPI, Django, Springboot, React JS, Nest JS, JSP Servlets, Node JS,
+          Mongo DB, DynamoDB, Redis, and Snowflake.
+        </p>
+      </section>
+
+      <section id="skills-section">
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>
+            <i class="fas fa-code"></i> Programming Languages: Python, Java,
+            C++, JavaScript
+          </li>
+          <li>
+            <i class="fab fa-html5"></i> Web Development: HTML, CSS, React, Node
+            js, Next js, Express.js
+          </li>
+          <li>
+            <i class="fas fa-server"></i> Backend Development: Flask, FastAPI,
+            Django, SpringBoot, JSP Servlets
+          </li>
+          <li>
+            <i class="fas fa-database"></i> Database: DynamoDB, MongoDB,
+            PostgresQL, MySQL
+          </li>
+          <li>
+            <i class="fas fa-tools"></i> Tools: Git, VS Code, JIRA, Pycharm,
+            Ecplise
+          </li>
+        </ul>
+      </section>
+
+      <section id="experience-section">
+        <h2>Experience</h2>
+        <h3><i class="fas fa-building"></i> <a href="https://hashedin.com/">HashedIN By Deloitte</a></h3>
+        <p>Duration: 03-2022 - Current</p>
+        <p>Location: Bangalore, Karnataka</p>
+        <p>Role: Software Development Engineer - 1</p>
+        <ul class="experience">
+          <li>
+            <i class="fas fa-check-circle"></i> Worked on major projects with
+            frontend and backend technology stacks including Flask, Django,
+            FastAPI, Spring Boot, React JS and Node JS.
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i> Successfully partnered on
+            developmental ventures involving cutting-edge databases including
+            Dynamodb and MongoDB, in addition to traditional ones like MySQL and
+            PostgreSQL.
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i> Proven expertise in designing
+            robust, scalable, and modular infrastructures, effectively managing
+            5 significant projects with a focus on an API-centric strategy to
+            ensure smooth integration.
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i> Hands-on expertise extends to a comprehensive array of platforms including AWS, Redis and Snowflake, enabling the delivery of cutting-edge solutions.
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i> Achieved a 100% improvement in project efficiency by reducing the complexity of intricate APIs requiring significant computations, while maintaining the security of vital information through encryption.
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i> Participated in key Data Engineering roles, efficiently processing extensive Excel datasets upto 1 GB in size for analytical purposes, thereby streamlining the decision-making process for clients.
+          </li>
+        </ul>
+        <br/>
+        <h3><i class="fas fa-building"></i> <a href="https://workinsync.io/">WorkInSync</a></h3>
+        <p>Duration: 08-2021 - 12-2021</p>
+        <p>Location: Bangalore, Karnataka</p>
+        <p>Role: Software Development Engineer - Intern</p>
+        <ul class="experience">
+          <li>
+            <i class="fas fa-check-circle"></i> Updated old code bases and design architecture to modern development standards, leading to improvement in functionality and performance of APIs.
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i> Effectively implemented algorithms such as Shortest Path and Nearest Neighborhood, improving the backend path- finding logic for a cab service that handles over 1000 rides daily, resulting in improvement of 50%.
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i> Technologies Learnt: Algorithm Design, Spring MVC, Back-End Web Development, Java Database Connectivity (JDBC), Database Design, Google Cloud
+          </li>
+        </ul>
+      </section>
+
+      <section id="projects-section">
+        <h2>Projects</h2>
+        <div class="project-description">
+          <h3>
+            <i class="fas fa-project-diagram"></i> <a href="https://transcripyt.com">TranscripYT : Video Transcripter</a>
+          </h3>
+          <p>Duration: Jun 2024 to Current</p>
+          <p>TranscripYT is A Modern tool to Browsing, Viewing Youtube Videos in addition to Extracting YouTube captions and subtitles and watching them in sync with the video.</p>
+          <ul>
+            <li>
+              <i class="fas fa-star"></i>
+              Get captions by video URL, search videos by name and view captions in all languages.
+            </li>
+            <li>
+              <i class="fas fa-star"></i>
+              Browse Youtube videos by categories like Trending, Gaming, Fashion, Music, News, Sports, and Podcasts.
+            </li>
+            <li>
+              <i class="fas fa-star"></i>
+              View videos side by side with Synchronized captions and download in various formats.
+            </li>
+          </ul>
+        </div>
+        <br/>
+        <div class="project-description">
+          <h3>
+            <i class="fas fa-project-diagram"></i> <a href="https://github.com/AnmolRajput272/USG">Unified Supplier Gateway</a>
+          </h3>
+          <p>Duration: Apr 2024 to May 2024</p>
+          <p>The Vendor Management Backend is a robust Django-based API backend designed to streamline vendor management processes for businesses. It offers a suite of APIs to manage vendors, purchase orders, and historical performance data.</p>
+          <ul>
+            <li>
+              <i class="fas fa-star"></i>
+              Create, modify, and track purchase orders. Monitor and analyze historical performance metrics of vendors.
+            </li>
+            <li>
+              <i class="fas fa-star"></i>
+              Integrate seamlessly with other systems for data synchronization and automation.
+            </li>
+            <li>
+              <i class="fas fa-star"></i>
+              This backend solution ensures efficiency, accuracy, and transparency in vendor-related operations, empowering businesses to optimize their procurement processes and enhance vendor relationships.
+            </li>
+          </ul>
+        </div>
+        <br/>
+        <div class="project-description">
+          <h3><i class="fas fa-project-diagram"></i> <a href="https://github.com/GUESS-BALL">GUESS Ball : Livestream Platform</a></h3>
+          <p>Duration: Oct 2023 to Nov 2023</p>
+          <p>
+            Guess Ball is an innovative project that integrates live broadcasting with interactive quizzes and questions.
+          </p>
+          <ul>
+            <li>
+              <i class="fas fa-star"></i>
+              Built on the Google Cloud Platform, it offers a dynamic viewing experience where viewers can participate in real-time quizzes during the broadcast.
+            </li>
+            <li>
+              <i class="fas fa-star"></i>
+              Winners are promptly displayed on the live stream, fostering engagement and excitement among the audience.
+            </li>
+            <li>
+              <i class="fas fa-star"></i>
+              With technologies like React JS and Spring Boot, coupled with MySQL for data storage, Guess Ball delivers seamless functionality and user interaction.
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="project-description">
+          <h3><i class="fas fa-project-diagram"></i> The Navigator</h3>
+          <p>Duration: Feb 2023 to Apr 2023</p>
+          <p>
+            Utilizing Dijkstra's algorithm, The Navigator project facilitates efficient pathfinding within the Lovely Professional University campus.
+          </p>
+          <ul>
+            <li>
+              <i class="fas fa-star"></i>
+              It provides a videographical representation of the shortest path between two points, enhancing navigation for students and visitors alike.
+            </li>
+            <li>
+              <i class="fas fa-star"></i>
+              Leveraging technologies such as React JS for the frontend and Spring Boot for the backend, along with MySQL for data management, it ensures robust performance and reliability.
+            </li>
+          </ul>
+        </div> -->
+      </section>
+
+      <section id="achievements-section">
+        <h2>Achievements</h2>
+        <div class="achievements">
+          <h3><i class="fas fa-trophy"></i> Achievements</h3>
+          <ul>
+            <li>
+              <i class="fas fa-medal"></i> Best Quarter Performance Award, March
+              2024: Honored for exceptional teamwork and quality work.
+            </li>
+            <li>
+              <i class="fas fa-medal"></i> Outstanding Performance Award,
+              February 2024: Lauded for diligent project management.
+            </li>
+            <li>
+              <i class="fas fa-medal"></i> Spot Award for Month Performace,
+              February 2023: Acclaimed for superior project execution.
+            </li>
+            <li><i class="fas fa-star"></i> 6 STAR Rating on HackerRank.</li>
+            <li><i class="fas fa-star"></i> 4 STAR Rating on CodeChef.</li>
+            <li><i class="fas fa-star"></i> 1700+ Ratings on GeeksforGeeks.</li>
+            <li>
+              <i class="fas fa-trophy"></i> Ranked 2K in Google KickStart
+              Round-H (All Asia Ranking).
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="certifications-section">
+        <h2>Certifications</h2>
+        <div class="certifications">
+          <h3><i class="fas fa-certificate"></i> Certifications</h3>
+          <ul>
+            <li><i class="fas fa-award"></i> <a href="https://media.geeksforgeeks.org/courses/certificates/40c6b208403131b022bc9d8339e91de4.pdf">Advanced Data Structures and Algorithms (Geeks4Geeks) </a></li>
+            <li><i class="fas fa-award"></i> <a href="https://drive.google.com/file/d/11tWdsb8Vy91_gYSHqRgK8xGND0qgrt8Z/view?usp=sharing">DevOps,CI/CD (Continuous Integration/Delivery) </a></li>
+            <li><i class="fas fa-award"></i> <a href="https://ude.my/UC-b61be8c8-d8f8-44cb-9d7c-eff24e7cdff4">HTML5 Application Development Fundamentals </a></li>
+            <li><i class="fas fa-award"></i> <a href="https://www.udemy.com/certificate/UC-16a2f50e-584e-485d-9438-e67334a89fc4/">Serverless Python Application on Google Cloud </a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact-section">
+        <h2>Contact</h2>
+        <div class="contact">
+          <p><i class="fas fa-phone"></i> Phone: +917417453644</p>
+          <p><i class="fas fa-envelope"></i> Email: Anmolrajput272@gmail.com</p>
+          <p>
+            <i class="fab fa-linkedin"></i> LinkedIn:
+            <a href="https://www.linkedin.com/in/anmol-suryavanshi/"
+              >@AnmolSuryavanshi</a
+            >
+          </p>
+          <p>
+            <i class="fab fa-github"></i> Github:
+            <a href="https://www.github.com/Anmolrajput272"
+              >@AnmolRajput272</a
+            >
+          </p>
+          <p>
+            <i class="fa-solid fa-laptop-code"></i> Geeks4Geeks:
+            <a href="https://auth.geeksforgeeks.org/user/anmolrajput272/"
+              >@AnmolRajput272</a
+            >
+          </p>
+          <p>
+            <i class="fa-solid fa-code"></i> Leetcode:
+            <a href="https://leetcode.com/Anmolrajput272/"
+              >@AnmolRajput272</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Anmol Rajput's Portfolio. All rights reserve</p>
+    </footer>
+  </body>
+</html>
